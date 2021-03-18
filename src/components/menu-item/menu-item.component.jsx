@@ -1,5 +1,7 @@
 import React from "react";
 
+import Content from "../content/content.component";
+
 import "./menu-item.styles.scss";
 
 const MenuItem = ({ title, imageUrl, size }) => (
@@ -10,10 +12,7 @@ const MenuItem = ({ title, imageUrl, size }) => (
         backgroundImage: `url(${imageUrl})`,
       }}
     />
-    <div className="content">
-      <h1 className="title">{title.toUpperCase()}</h1>
-      <span className="subtitle">SHOP NOW</span>
-    </div>
+    <Content title={title} />
   </div>
 );
 
