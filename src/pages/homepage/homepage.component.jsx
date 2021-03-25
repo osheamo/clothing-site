@@ -5,7 +5,9 @@ import Directoy from '../../components/directory/directory.component';
 import './homepage.styles.scss'
 
 const HomePage = () => (
-    <Directoy />
-)
+    <div className='homePage'>
+        <Directoy />
+    </div>
+);
 
 export default HomePage;
